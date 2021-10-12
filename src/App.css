@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -13,26 +15,149 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 30px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  z-index: 1000;
+}
+.navbar p {
+  width: 70px;
+  height: 25px;
+  font-weight: 500;
+  color: #ffff;
+  border-radius: 20px;
+}
+.navbar p:hover,
+.navbar p.active {
+  background-color: #ffff;
+  color: #466ba3;
+}
+
+.home-section section {
+  background: linear-gradient(#7597de, #eeee);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  overflow: hidden;
+}
+.home-section section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.home-section section img#moon {
+  mix-blend-mode: screen;
+}
+.home-section section img#mountains_front {
+  z-index: 10;
+}
+.home-section section img#mountains_behind {
+  z-index: 8;
+}
+.home-section #text {
+  position: absolute;
+  color: #eeee;
+  text-align: justify;
+  /* right: 0; */
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+.home-section #btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  text-align: center;
+  right: 20px;
+  background: #eeee;
+  border-radius: 40px;
+  color: rgba(35, 18, 97, 0.658) de;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+.about-section {
+  height: 100vh;
+  width: 100vw;
+  background: #7597de;
+  /* align-items: center; */
+  /* align-items: baseline; */
+}
+.about-section img#profile {
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+  object-position: top;
+  margin: 10px;
+  border-radius: 50%;
+  z-index: 20;
+}
+.about-section h1 {
+  margin-top: 0%;
+  padding: 50px;
+}
+.skill-section {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c4d6fa;
+}
+.project-section {
+  height: 100%;
+  width: 100vw;
+  background-color: #95b9ff;
+}
+.project-section h1 {
+  margin-top: 0%;
+  padding: 50px;
+}
+.contact-section {
+  height: 100%;
+  width: 100vw;
+  background-color: #5890ff;
+  justify-content: space-between;
+}
+.contact-section .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.contact-section .fa:hover {
+  opacity: 0.7;
+}
+.contact-section .fa-facebook {
+  background: #3b5998;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.contact-section .fa-twitter {
+  background: #55acee;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-section .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.contact-section .fa-instagram {
+  background: #125688;
+  color: white;
+}
+.contact-section .fa-skype {
+  background: #00aff0;
+  color: white;
 }
