@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-scroll';
-// import './navbar.css';
 
 class NavBar extends React.Component {
     render() { 

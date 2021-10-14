@@ -10,7 +10,6 @@ function Home () {
       }
     }, []);
   
-    console.log(offset); 
     return <div className="home-section" id='home'>
         <section>
             <img src="img/stars.png" style={{left: offset*0.25 +"px"}} alt='' id="stars"/>
