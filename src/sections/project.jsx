@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{ useEffect } from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -19,14 +19,21 @@ import CreateIcon from '@mui/icons-material/Create';
 import CodeIcon from '@mui/icons-material/Code';
 
 import Typography from '@mui/material/Typography';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 export default function Project() {
+  useEffect(() => {
+      Aos.init({duration:2000});
+  }, [])
   return (
     <div className='project-section' id='project'>
-        <Typography variant="h1" component="h1">
-              Milestone
-            </Typography>
-        <Timeline position="alternate">
+      <Typography variant="h1" component="h1">
+            Milestone
+          </Typography>
+      <div data-aos='fade-up'>
+      <Timeline position="alternate">
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
@@ -50,7 +57,6 @@ export default function Project() {
             <Typography>Attend an culteral exchange student program of rotary youth exchange in Potsdam, Germany</Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
@@ -73,7 +79,6 @@ export default function Project() {
             <Typography>A Chief of Computer section in AC Cheer</Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'info.main' }}/>
@@ -89,7 +94,6 @@ export default function Project() {
             <Typography>A member of Assumption College's Interact club</Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
         <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
@@ -112,7 +116,6 @@ export default function Project() {
             <Typography>Programmer in Young buisness model project to create a cafe in Assumption College. </Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'info.main' }}/>
@@ -128,7 +131,6 @@ export default function Project() {
             <Typography>President of Assumption College's Interact club</Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'info.main' }}/>
@@ -145,7 +147,6 @@ export default function Project() {
             <Typography>Website : <Link href="https://spaceac.net/" color="inherit">Space AC</Link></Typography>            
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'info.main' }}/>
@@ -161,8 +162,6 @@ export default function Project() {
             <Typography>Program a Cube Satelite for a high altitude balloon. To make a research in Air pollution</Typography>
           </TimelineContent>
         </TimelineItem>
-
-
         <TimelineItem>
         <TimelineOppositeContent
             sx={{ m: 'auto 0' }}
@@ -185,7 +184,6 @@ export default function Project() {
             <Typography>Vice President at district 3350 Interact</Typography>
           </TimelineContent>
         </TimelineItem>
-
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector sx={{ bgcolor: 'info.main' }}/>
@@ -422,6 +420,7 @@ export default function Project() {
           </TimelineContent>
         </TimelineItem>
     </Timeline>
+    </div>
     </div>
   );
 }
