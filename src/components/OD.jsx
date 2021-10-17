@@ -68,6 +68,7 @@ function OD() {
               muted={true}
               mirrored={true} 
               style={{
+                position: "absolute",
                 marginLeft: "auto",
                 marginRight: "auto",
                 left: 0,

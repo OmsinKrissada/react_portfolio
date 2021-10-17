@@ -5,11 +5,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import TrapFocus from '@mui/material/Unstable_TrapFocus';
-import { Modal, Button } from 'rsuite';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
 import { Container, Header, Content } from 'rsuite';
 
 import OD from "../components/OD";
@@ -214,19 +213,24 @@ function Skill(){
                                 </CardActionArea>
                                                                  
                             </Card>
-                            <Modal open={open} onClose={handleClose}>
-                                    <Modal.Header>
-                                    <Modal.Title>Modal Title</Modal.Title>
-                                    </Modal.Header>
-                                    <Modal.Body>
-                                        HIHI
-                                    </Modal.Body>
-                                    <Modal.Footer>
-                                    <Button onClick={handleClose} appearance="primary">
-                                        Ok
-                                    </Button>
-                                    </Modal.Footer>
-                            </Modal>  
+                            <Modal
+                              open={open}
+                              onClose={handleClose}
+                              aria-labelledby="modal-modal-title"
+                              aria-describedby="modal-modal-description"
+                            >
+                              <Box sx={{position: 'absolute',
+                                        top: '50%',
+                                        left: '50%',
+                                        transform: 'translate(-50%, -50%)',
+                                        width: 400,
+                                        bgcolor: 'background.paper',
+                                        border: '2px solid #000',
+                                        boxShadow: 24,
+                                        p: 4,}}>
+                                <OD></OD>
+                              </Box>
+                            </Modal>
                         </div> 
                         {console.log(open)}
                         <div data-aos='fade-up' className='codecard'>
@@ -325,9 +329,9 @@ function Skill(){
                     </Content>
                 </Container>
                 <Container>
-                        <div data-aos='fade-up' className=''>
-                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Website Development</Typography>
-                        </div>
+                <div data-aos='fade-up' className=''>
+                    <Typography variant='h3' style={{paddingTop:60+"px"}}>Website Development</Typography>
+                </div>
                     <Content>
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
