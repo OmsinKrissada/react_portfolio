@@ -4,15 +4,14 @@ import Rating from '@mui/material/Rating';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import TrapFocus from '@mui/material/Unstable_TrapFocus';
 import { CardActionArea } from '@mui/material';
+import Box from '@mui/material/Box';
+import TrapFocus from '@mui/material/Unstable_TrapFocus';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import { Container, Header, Content, Sidebar } from 'rsuite';
+import { Container, Header, Content } from 'rsuite';
 
 import OD from "../components/OD";
 
@@ -20,6 +19,7 @@ import OD from "../components/OD";
 
 function Skill(){
     const [open, setOpen] = React.useState(false);
+
     useEffect(() => {
         Aos.init({duration:1000});
     }, [])
@@ -46,8 +46,9 @@ function Skill(){
                                         <Rating name="read-only" value={5} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        Most preferred language. I can code best with python.
+                                        I code python in many project.
+                                        Design UI, Data visualization, Games and a lot more!
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -68,8 +69,8 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I start learn programming with C language. C teach me fundamental programming.
+                                        I mostly use C to read libraries.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -90,8 +91,8 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I started learning C++ after C. I prefer C++ over C due to its simplicity
+                                        .I use C++ a lot in IOT to program micro-controller.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -112,8 +113,8 @@ function Skill(){
                                         <Rating name="read-only" value={3} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I haven't learn HTML properly until 2020. Before that I read HTML when I inspect webpage.
+                                        Every Web project which I build has HTML code. 
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -134,8 +135,8 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I start learning Css and HTML together. I have fundamental
+                                        understanding with css which use along with my project.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -156,8 +157,8 @@ function Skill(){
                                         <Rating name="read-only" value={3} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        Javascript is like a brain to website development. I use Javascript from time to time.
+                                        Javascript is not a strong language for me.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -178,8 +179,8 @@ function Skill(){
                                         <Rating name="read-only" value={1} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        My father encourage me to learn Solidity because he and i both have interest in Crypto currency.
+                                        I have learn it. but haven't use it yet.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -189,19 +190,16 @@ function Skill(){
                 </Container>
                 <Container>
                     <div data-aos='fade-up' className=''>
-                        <Typography variant='h3' style={{paddingTop:60+"px"}}>Mechine Learning</Typography>
+                        <Typography variant='h3' style={{paddingTop:60+"px"}}>Machine Learning</Typography>
                     </div>
                     <Content>
-                        {/* <Button color="secondary" variant="outlined" onClick={() => setOpen(true)}>
-                            <Typography variant='h5' >Open</Typography>
-                        </Button> */}
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
+                                <CardActionArea onClick={() => setOpen(true)}>
                                     <CardMedia
                                     component="img"
                                     height="140"
-                                    image="img/data.jpeg"
+                                    image="img/TFOD.jpg"
                                     alt="TFOD"
                                     />
                                     <CardContent>
@@ -210,11 +208,20 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I am fond of Object detection and image recognision. I start with using open source model then after a while I start creating my own!
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
+                                {open && (
+                                    <TrapFocus open>
+                                    <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
+                                        <OD></OD>
+                                        <button type="button" onClick={() => setOpen(false)}>
+                                        Close
+                                        </button>
+                                    </Box>
+                                    </TrapFocus>
+                                )}
                             </Card>
                         </div>
                         <div data-aos='fade-up' className='codecard'>
@@ -223,17 +230,16 @@ function Skill(){
                                     <CardMedia
                                     component="img"
                                     height="140"
-                                    image="img/data.jpeg"
+                                    image="img/MLAI.jpeg"
                                     alt="AI"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
-                                        AI
-                                        <Rating name="read-only" value={1} readOnly />
+                                        ML & AI
+                                        <Rating name="read-only" value={2} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I use Machine learing with Keras and Tensorflow. Studing data with regression, CNN, with both supervise and unsupervise learing. 
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -245,17 +251,16 @@ function Skill(){
                                     <CardMedia
                                     component="img"
                                     height="140"
-                                    image="img/data.jpeg"
+                                    image="img/data.jpg"
                                     alt="Data"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
                                         Data Analysis
-                                        <Rating name="read-only" value={1} readOnly />
+                                        <Rating name="read-only" value={3} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        My published research both use machine learning in order to analyse data and display a visulise data.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -265,7 +270,7 @@ function Skill(){
                 </Container>
                 <Container>
                         <div data-aos='fade-up' className=''>
-                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Internet Of things</Typography>
+                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Internet Of Things</Typography>
                         </div>
                     <Content>
                         <div data-aos='fade-up' className='codecard'>
@@ -283,8 +288,8 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I start learning Arduino when I join SPACE AC. CanSat project has been buid with Arduino.
+                                        I get data from sensor and use it along with IOT.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -305,8 +310,8 @@ function Skill(){
                                         <Rating name="read-only" value={3} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        I use Raspberry pi in server managment and Camera. Coding in Linux-base is similar to x86.
+                                        I need to learn some linux command to use it too!
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -316,7 +321,7 @@ function Skill(){
                 </Container>
                 <Container>
                         <div data-aos='fade-up' className=''>
-                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Web development</Typography>
+                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Website Development</Typography>
                         </div>
                     <Content>
                         <div data-aos='fade-up' className='codecard'>
@@ -334,8 +339,7 @@ function Skill(){
                                         <Rating name="read-only" value={3} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        React is an amazing tools to build Website. This website is aloso created with react.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -356,8 +360,7 @@ function Skill(){
                                         <Rating name="read-only" value={1} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                       Django has an amazing backend. I have learned it a while ago but find it hard to work with.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -378,8 +381,7 @@ function Skill(){
                                         <Rating name="read-only" value={2} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                                        species, ranging across all continents except Antarctica
+                                        A popular light weight website backend as flask is easy to use. I have use this for a few projects.
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>

@@ -36,7 +36,7 @@ function OD() {
         const expanded = casted.expandDims(0)
         const obj = await net.executeAsync(expanded)
         
-        console.log(await obj[1].array())
+        // console.log(await obj[1].array())
 
         const boxes = await obj[4].array()
         const classes = await obj[5].array()
