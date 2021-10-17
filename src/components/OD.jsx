@@ -10,7 +10,7 @@ function OD() {
 
     const runCoco = async () => {
         const net = await tf.loadGraphModel('https://livelong.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json')
-        intervel = setInterval(() => {
+        interval = setInterval(() => {
         detect(net);
         }, 16.7);
     };
