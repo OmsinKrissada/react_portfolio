@@ -6,10 +6,11 @@ import { drawRect } from "../utilitie";
 function OD() {
     const webcamRef = useRef(null);
     const canvasRef = useRef(null);
+    let interval;
 
     const runCoco = async () => {
         const net = await tf.loadGraphModel('https://livelong.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json')
-        setInterval(() => {
+        intervel = setInterval(() => {
         detect(net);
         }, 16.7);
     };
@@ -42,7 +43,10 @@ function OD() {
         const classes = await obj[5].array()
         const scores = await obj[6].array()
         
-        if (!canvasRef || !canvasRef.current) return;
+        if (!canvasRef || !canvasRef.current){
+            clearInterval(interval);
+            return;
+        }
         const ctx = canvasRef.current.getContext("2d");
 
         requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.7, videoWidth, videoHeight, ctx)}); 
