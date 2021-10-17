@@ -2,6 +2,7 @@
   text-align: center;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .App-logo {
@@ -101,9 +102,15 @@
   padding: 50px;
 }
 .skill-section {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  background-color: #c4d6fa;
+  align-items: center;
+  background: linear-gradient(#7597de, #eeee);
+  /* padding: 70px; */
+}
+.skill-section .codecard {
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
 }
 .project-section {
   height: 100%;

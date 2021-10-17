@@ -25,7 +25,7 @@ import 'aos/dist/aos.css';
 
 export default function Project() {
   useEffect(() => {
-      Aos.init({duration:2000});
+      Aos.init({duration:1000});
   }, [])
   return (
     <div className='project-section' id='project'>
