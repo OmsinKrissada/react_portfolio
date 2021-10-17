@@ -42,7 +42,7 @@ function OD() {
         const classes = await obj[5].array()
         const scores = await obj[6].array()
         
-        // Draw mesh
+        if (!canvasRef || !canvasRef.current) return;
         const ctx = canvasRef.current.getContext("2d");
 
         requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.7, videoWidth, videoHeight, ctx)}); 

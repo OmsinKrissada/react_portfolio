@@ -5,9 +5,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
-import Box from '@mui/material/Box';
 import TrapFocus from '@mui/material/Unstable_TrapFocus';
-
+import { Modal, Button } from 'rsuite';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -19,6 +18,8 @@ import OD from "../components/OD";
 
 function Skill(){
     const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
 
     useEffect(() => {
         Aos.init({duration:1000});
@@ -47,8 +48,7 @@ function Skill(){
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         Most preferred language. I can code best with python.
-                                        I code python in many project.
-                                        Design UI, Data visualization, Games and a lot more!
+                                        I code python in many project.Design UI, Data visualization, Games and a lot more!
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
@@ -86,14 +86,14 @@ function Skill(){
                                     alt="cplusplus"
                                     />
                                     <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        C++
-                                        <Rating name="read-only" value={4} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I started learning C++ after C. I prefer C++ over C due to its simplicity
-                                        .I use C++ a lot in IOT to program micro-controller.
-                                    </Typography>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            C++
+                                            <Rating name="read-only" value={4} readOnly />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            I started learning C++ after C. I prefer C++ over C due to its simplicity. 
+                                            I use C++ a lot in IOT to program micro-controller.
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                             </Card>
@@ -174,14 +174,14 @@ function Skill(){
                                     alt="solidity"
                                     />
                                     <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Solidity
-                                        <Rating name="read-only" value={1} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        My father encourage me to learn Solidity because he and i both have interest in Crypto currency.
-                                        I have learn it. but haven't use it yet.
-                                    </Typography>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Solidity
+                                            <Rating name="read-only" value={1} readOnly />
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            My father encourage me to learn Solidity because he and i both have interest in Crypto currency.
+                                            I have learn it. but haven't use it yet.
+                                        </Typography>
                                     </CardContent>
                                 </CardActionArea>
                             </Card>
@@ -195,12 +195,12 @@ function Skill(){
                     <Content>
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea onClick={() => setOpen(true)}>
+                                <CardActionArea onClick={handleOpen}>
                                     <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/TFOD.jpg"
-                                    alt="TFOD"
+                                        component="img"
+                                        height="140"
+                                        image="img/TFOD.jpg"
+                                        alt="TFOD"
                                     />
                                     <CardContent>
                                     <Typography gutterBottom variant="h5" component="div">
@@ -212,18 +212,23 @@ function Skill(){
                                     </Typography>
                                     </CardContent>
                                 </CardActionArea>
-                                {open && (
-                                    <TrapFocus open>
-                                    <Box tabIndex={-1} sx={{ mt: 1, p: 1 }}>
-                                        <OD></OD>
-                                        <button type="button" onClick={() => setOpen(false)}>
-                                        Close
-                                        </button>
-                                    </Box>
-                                    </TrapFocus>
-                                )}
+                                                                 
                             </Card>
-                        </div>
+                            <Modal open={open} onClose={handleClose}>
+                                    <Modal.Header>
+                                    <Modal.Title>Modal Title</Modal.Title>
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        HIHI
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                    <Button onClick={handleClose} appearance="primary">
+                                        Ok
+                                    </Button>
+                                    </Modal.Footer>
+                            </Modal>  
+                        </div> 
+                        {console.log(open)}
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
