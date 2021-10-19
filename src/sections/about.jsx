@@ -17,6 +17,7 @@ function About () {
         <div data-src="img\Artboard3.png" />
         <div data-src="img\Artboard2.png" />
         <div data-src="img\Artboard1.png" />
+        <div data-src="img\Artboard4.png" />
       </AutoplaySlider>
   </div>;
     
