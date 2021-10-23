@@ -7,6 +7,7 @@ import About from './sections/about';
 import Contact from './sections/contact';
 
 
+
 function App() {
   return ( <div className='App'>
     <NavBar/>
@@ -15,6 +16,7 @@ function App() {
     <Skill/>
     <Project/>
     <Contact/>
+    
   </div>);
 }
 

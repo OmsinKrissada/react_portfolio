@@ -9,16 +9,20 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { Container, Header, Content } from 'rsuite';
+import { Card  as GitCard} from 'react-github-stats-card-v2';
+
+import { StackOverflowBadge } from 'react-stack-overflow-badge'
+import 'react-stack-overflow-badge/dist/index.css'
 
 import OD from "../components/OD";
 
 
 
 function Skill(){
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const [odopen, setOdOpen] = React.useState(false);
+    const [gitopen, setGitOpen] = React.useState(false);
 
     useEffect(() => {
         Aos.init({duration:1000});
@@ -26,6 +30,54 @@ function Skill(){
     return <div className='skill-section' id='skill'>
             <Container>
                 <Header><Typography variant='h1' style={{paddingTop:60+"px"}}>Programming</Typography></Header>
+                <div data-aos='fade-up' className='codecard'>
+                            <Card sx={{ maxWidth: 345 }} >
+                                <CardActionArea onClick={() => setGitOpen(true)}>
+                                    <CardMedia
+                                    component="img"
+                                    height="140"
+                                    image="img/github.png"
+                                    alt="python_card"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        Github
+                                    </Typography>
+                                    <Button size="small">Retaehc-pop github</Button>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                            <Modal
+                              open={gitopen}
+                              onClose={() => setGitOpen(false)}
+                              aria-labelledby="modal-modal-title"
+                              aria-describedby="modal-modal-description"
+                            >
+                                <GitCard
+                                    username='Retaehc-pop'
+                                    theme={true}
+                                    themeColor='black'
+                                    />
+                            </Modal>
+                        </div>
+                        <div data-aos='fade-up' className='codecard'>
+                            <Card sx={{ maxWidth: 345 }} >
+                                <CardActionArea href='https://stackoverflow.com/users/14537225/papop-lekhapanyaporn'>
+                                    <CardMedia
+                                    component="img"
+                                    height="140"
+                                    image="img/stackoverflow.jpg"
+                                    alt="python_card"
+                                    />
+                                    <CardContent>
+                                    <Typography gutterBottom variant="h5" component="div">
+                                        stack overflow <StackOverflowBadge id={14537225} card={false} />
+                                    </Typography>
+                                    <Button size="small">Stackoveflow</Button>
+                                    </CardContent>
+                                </CardActionArea>
+                            </Card>
+                        </div>
                 <Container>
                         <div data-aos='fade-up'>
                         <Typography variant='h3' style={{paddingTop:60+"px"}}>Coding</Typography>
@@ -194,7 +246,7 @@ function Skill(){
                     <Content>
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea onClick={handleOpen}>
+                                <CardActionArea onClick={() =>setOdOpen(true)}>
                                     <CardMedia
                                         component="img"
                                         height="140"
@@ -207,22 +259,22 @@ function Skill(){
                                         <Rating name="read-only" value={4} readOnly />
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        I am fond of Object detection and image recognision. I start with using open source model then after a while I start creating my own!
+                                        I am fond of Object detection. I started using open source then I start creating my own!
                                     </Typography>
                                     </CardContent>
+                                    <Button size="small">Try it out!</Button>
                                 </CardActionArea>
                                                                  
                             </Card>
                             <Modal
-                              open={open}
-                              onClose={handleClose}
+                              open={odopen}
+                              onClose={() => setOdOpen(false)}
                               aria-labelledby="modal-modal-title"
                               aria-describedby="modal-modal-description"
                             >
                                 <OD></OD>
                             </Modal>
                         </div> 
-                        {console.log(open)}
                         <div data-aos='fade-up' className='codecard'>
                             <Card sx={{ maxWidth: 345 }}>
                                 <CardActionArea>
