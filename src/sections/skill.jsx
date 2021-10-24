@@ -8,7 +8,6 @@ import { CardActionArea } from '@mui/material';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { Container, Header, Content } from 'rsuite';
 import { Card  as GitCard} from 'react-github-stats-card-v2';
