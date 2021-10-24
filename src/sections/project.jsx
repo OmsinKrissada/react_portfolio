@@ -113,7 +113,7 @@ export default function Project() {
             <Typography variant="h5" component="span">
               Krub's Cafe
             </Typography>
-            <Typography>Programmer in Young buisness model project to create a cafe in Assumption College. </Typography>
+            <Typography>Programmer in Young business model project to create a cafe in Assumption College. </Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
