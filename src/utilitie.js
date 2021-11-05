@@ -1,8 +1,6 @@
 const labelMap = {
-    1:{name:'ThumbsUp', color:'red'},
-    2:{name:'ThumbsDown', color:'yellow'},
-    3:{name:'ThankYou', color:'lime'},
-    4:{name:'LiveLong', color:'blue'},
+    1:{name:'OmeletteRice', color:'red'},
+    2:{name:'ChickenRice', color:'yellow'},
 }
 
 // Define a drawing function

@@ -9,7 +9,7 @@ function OD() {
     let interval;
 
     const runCoco = async () => {
-        const net = await tf.loadGraphModel('https://livelong.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json')
+        const net = await tf.loadGraphModel('https://foodbuster.s3.jp-tok.cloud-object-storage.appdomain.cloud/model.json')
         interval = setInterval(() => {
         detect(net);
         }, 16.7);

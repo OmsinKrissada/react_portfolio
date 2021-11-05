@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+ibmcloud cos bucket-cors-put --bucket livelong --cors-configuration file://corsconfig.json
+
 ### `npm start`
 
 Runs the app in the development mode.\
