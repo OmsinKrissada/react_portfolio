@@ -138,8 +138,8 @@
 .contact-section .fa:hover {
   opacity: 0.7;
 }
-.contact-section .fa-facebook {
-  background: #3b5998;
+.contact-section .fa-github {
+  background: #000000;
   color: white;
 }
 .contact-section .fa-twitter {
@@ -154,7 +154,11 @@
   background: #125688;
   color: white;
 }
-.contact-section .fa-skype {
-  background: #00aff0;
+.contact-section .fa-phone-square {
+  background: #52b35a;
   color: white;
+}
+.contact-section .fa-stack-overflow {
+  background: #f1f1f1;
+  color: rgb(240, 164, 64);
 }
