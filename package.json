@@ -21,6 +21,8 @@
     "react-github-stats-card": "^1.0.1",
     "react-github-stats-card-v2": "^1.2.0",
     "react-image-gallery": "^1.2.7",
+    "react-images": "^1.2.0-beta.7",
+    "react-photo-gallery": "^8.0.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-skillbars": "^1.6.1",

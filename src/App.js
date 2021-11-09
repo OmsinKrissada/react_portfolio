@@ -5,7 +5,7 @@ import Skill from './sections/skill';
 import Project from './sections/project';
 import About from './sections/about';
 import Contact from './sections/contact';
-
+import Test from './sections/testtt'
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
     <Home/>
     <About/>
     <Skill/>
+    <Test/>
     <Project/>
     <Contact/>
     
