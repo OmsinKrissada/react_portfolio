@@ -40,15 +40,12 @@ function Test(){
 	}, [])
 	return <div className='skill-section' id='skill'>
 			<Container>
-				<Header><Typography variant='h1' style={{paddingTop:60+"px"}}>Programming</Typography></Header>
+				<Header><Typography variant='h1' style={{padding:"60px 60px 60px 60px"}}>Programming</Typography></Header>
 				<Container>
-						<div data-aos='fade-up'>
-						<Typography variant='h3' style={{paddingTop:60+"px"}}>Work</Typography>
-						</div>
 					<Content>
 						<div data-aos='fade-up' className='codecard'>
 							<Card sx={{ width: 345, height:270 }} >
-								<CardActionArea>
+								<CardActionArea href='https://www.python.org/'>
 									<CardMedia
 									component="img"
 									height="140"
@@ -449,6 +446,8 @@ function Test(){
 					</Content>
 				</Container>
 			</Container>
+      <Header style={{padding:"60px 60px 40px 60px"}}><Typography variant='h1' >Project</Typography>
+      <Typography variant='h6' >Click to navigate to that project</Typography></Header>
 			<Gallery photos={photos} direction={"column"} margin={5} onClick={openLightbox}/>
 			<ModalGateway>
 				{viewerIsOpen ? (

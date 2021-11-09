@@ -14,10 +14,10 @@ function About () {
         bullets={false}
         // fillParent={true}
       >
-        <div data-src="img\Artboard3.png" />
-        <div data-src="img\Artboard2.png" />
-        <div data-src="img\Artboard1.png" />
-        <div data-src="img\Artboard4.png" />
+        <div data-src="img\about\Artboard3.png" />
+        <div data-src="img\about\Artboard2.png" />
+        <div data-src="img\about\Artboard1.png" />
+        <div data-src="img\about\Artboard4.png" />
       </AutoplaySlider>
   </div>;
     

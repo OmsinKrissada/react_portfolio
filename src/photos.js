@@ -3,37 +3,37 @@ export const photos = [
       src: "img/python.png",
       width: 2,
       height: 1,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Pygame_Tetris'
     },
     {
       src: "img/cpp.jpg",
       width: 50,
       height: 21,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Flappybird-Al'
     },
     {
       src: "img/C.jpg",
       width: 2,
       height: 1,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Retaehc_BOT'
     },
     {
       src: "img/html.png",
       width: 1200,
       height: 667,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Pygame_Pingpong'
     },
     {
       src: "img/css.png",
       width: 16,
       height: 9,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Krub-cafe-Cashier-app'
     },
     {
       src: "img/JS.png",
       width: 7,
       height: 5,
-      href: 'https://google.com'
+      href: '#'
     },
     {
       src: "img/solidity.jpg",
