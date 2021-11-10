@@ -51,7 +51,7 @@ export const photos = [
       src: "img/work/chessai.png",
       width: 1,
       height: 1,
-      href: '#'
+      href: 'https://github.com/Retaehc-pop/Pygame_ChessEngine'
     },
     {
       src: "img/work/alien.jpeg",
@@ -66,22 +66,35 @@ export const photos = [
       href: 'https://github.com/Retaehc-pop/SpaceAc_tools'
     },
     {
-      src: "img/keras.png",
+      src: "img/work/dinoai.png",
+      width: 8,
+      height: 5,
+      href: 'https://github.com/Retaehc-pop/Pygame_dino'
+    },
+    
+    {
+      src: "img/work/passenger1.png",
       width: 1,
       height: 1,
-      href: 'https://github.com/Retaehc-pop/Object-recognition'
+      href: 'https://github.com/Retaehc-pop/PSG-I'
+    },
+    {
+      src: "img/work/passenger2.png",
+      width: 1,
+      height: 1,
+      href: 'https://github.com/Retaehc-pop/PSG-I'
+    },
+    {
+      src: "img/work/passenger3.png",
+      width: 1,
+      height: 1,
+      href: 'https://github.com/Retaehc-pop/PSG-I'
     },
     {
       src: "img/TFOD.jpg",
       width: 120,
       height: 63,
       href: 'https://github.com/Retaehc-pop/Django_Reminder'
-    },
-    {
-      src: "img/tf.png",
-      width: 1,
-      height: 1,
-      href: 'https://github.com/Retaehc-pop/PSG-I'
     },
     {
       src: "img/django.png",
