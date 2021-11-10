@@ -1,87 +1,87 @@
 export const photos = [
     {
-      src: "img/python.png",
-      width: 2,
-      height: 1,
+      src: "img/work/Tetris_ai.png",
+      width: 8,
+      height: 5,
       href: 'https://github.com/Retaehc-pop/Pygame_Tetris'
     },
     {
-      src: "img/cpp.jpg",
-      width: 50,
-      height: 21,
+      src: "img/work/flappybird.jpg",
+      width: 700,
+      height: 357,
       href: 'https://github.com/Retaehc-pop/Flappybird-Al'
     },
     {
-      src: "img/C.jpg",
-      width: 2,
-      height: 1,
+      src: "img/work/rtbot.png",
+      width: 8,
+      height: 5,
       href: 'https://github.com/Retaehc-pop/Retaehc_BOT'
     },
     {
-      src: "img/html.png",
+      src: "img/work/pong.jpg",
       width: 1200,
       height: 667,
       href: 'https://github.com/Retaehc-pop/Pygame_Pingpong'
     },
     {
-      src: "img/css.png",
-      width: 16,
-      height: 9,
+      src: "img/work/krubcafe.png",
+      width: 8,
+      height: 5,
       href: 'https://github.com/Retaehc-pop/Krub-cafe-Cashier-app'
     },
     {
-      src: "img/JS.png",
-      width: 7,
+      src: "img/work/retaehcweb.png",
+      width: 8,
       height: 5,
+      href: 'https://github.com/Retaehc-pop/react_portfolio'
+    },
+    {
+      src: "img/work/Foodbuster.png",
+      width: 484,
+      height: 1047,
+      href: 'https://github.com/Food-Busters'
+    },
+    {
+      src: "img/work/sporos.jpg",
+      width: 1,
+      height: 1,
+      href: 'https://github.com/Retaehc-pop/US-cansat'
+    },
+    {
+      src: "img/work/chessai.png",
+      width: 1,
+      height: 1,
       href: '#'
     },
     {
-      src: "img/solidity.jpg",
-      width: 3,
-      height: 2,
-      href: 'https://google.com'
-    },
-    {
-      src: "img/qt.jpg",
+      src: "img/work/alien.jpeg",
       width: 1,
       height: 1,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Thailand-cansat'
     },
     {
-      src: "img/arduino.jpg",
-      width: 570,
-      height: 375,
-      href: 'https://google.com'
-    },
-    {
-      src: "img/raspberrypi.png",
-      width: 2,
-      height: 1,
-      href: 'https://google.com'
-    },
-    {
-      src: "img/react.png",
-      width: 4,
-      height: 3,
-      href: 'https://google.com'
-    },
-    {
-      src: "img/TFOD.jpg",
-      width: 120,
-      height: 63,
-      href: 'https://google.com'
+      src: "img/work/spaceac.png",
+      width: 8,
+      height: 5,
+      href: 'https://github.com/Retaehc-pop/SpaceAc_tools'
     },
     {
       src: "img/keras.png",
       width: 1,
       height: 1,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Object-recognition'
+    },
+    {
+      src: "img/TFOD.jpg",
+      width: 120,
+      height: 63,
+      href: 'https://github.com/Retaehc-pop/Django_Reminder'
     },
     {
       src: "img/tf.png",
       width: 1,
       height: 1,
-      href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/PSG-I'
     },
     {
       src: "img/django.png",

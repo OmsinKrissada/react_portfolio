@@ -21,7 +21,6 @@ function Home () {
             <img src="img/home/mountains_front.png" style={{top: offset*0 +"px"}} alt='' id="mountains_front"/>
         </section>  
     </div>;
-
   };
 
 export default Home;
