@@ -29,7 +29,7 @@
   z-index: 1000;
 }
 .navbar p {
-  width: 70px;
+  width: 100px;
   height: 25px;
   font-weight: 500;
   color: #ffff;
@@ -68,7 +68,7 @@
   z-index: 10;
 }
 .home-section section img#mountains_behind {
-  z-index: 8;
+  z-index: 0;
 }
 .home-section #text {
   position: absolute;
@@ -77,7 +77,7 @@
   /* right: 0; */
   white-space: nowrap;
   font-size: 7.5vw;
-  z-index: 9;
+  z-index: 100;
 }
 .home-section #btn {
   text-decoration: none;
