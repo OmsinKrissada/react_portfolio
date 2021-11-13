@@ -7,439 +7,421 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
 import { Container, Header, Content } from 'rsuite';
-import { Card  as GitCard} from 'react-github-stats-card-v2';
-
-import { StackOverflowBadge } from 'react-stack-overflow-badge'
 import 'react-stack-overflow-badge/dist/index.css'
 
-import OD from "../components/OD";
-
-
-
 function Skill(){
-    const [odopen, setOdOpen] = React.useState(false);
-    const [gitopen, setGitOpen] = React.useState(false);
-
     useEffect(() => {
         Aos.init({duration:1000});
     }, [])
     return <div className='skill-section' id='skill'>
-            <Container>
-                <Header><Typography variant='h1' style={{paddingTop:60+"px"}}>Programming</Typography></Header>
-                <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }} >
-                                <CardActionArea onClick={() => setGitOpen(true)}>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/github.png"
-                                    alt="python_card"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Github
-                                    </Typography>
-                                    <Button size="small">Retaehc-pop github</Button>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                            <Modal
-                              open={gitopen}
-                              onClose={() => setGitOpen(false)}
-                              aria-labelledby="modal-modal-title"
-                              aria-describedby="modal-modal-description"
-                            >
-                                <GitCard
-                                    username='Retaehc-pop'
-                                    theme={true}
-                                    themeColor='black'
-                                    />
-                            </Modal>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }} >
-                                <CardActionArea href='https://stackoverflow.com/users/14537225/papop-lekhapanyaporn'>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/stackoverflow.jpg"
-                                    alt="python_card"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        stack overflow <StackOverflowBadge id={14537225} card={false} />
-                                    </Typography>
-                                    <Button size="small">Stackoveflow</Button>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                <Container>
-                        <div data-aos='fade-up'>
-                        <Typography variant='h3' style={{paddingTop:60+"px"}}>Coding</Typography>
-                        </div>
-                    <Content>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }} >
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/python.png"
-                                    alt="python_card"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Python
-                                        <Rating name="read-only" value={5} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        Most preferred language. I can code best with python.
-                                        I code python in many project.Design UI, Data visualization, Games and a lot more!
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/C.jpg"
-                                    alt="C_card"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        C
-                                        <Rating name="read-only" value={4} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I start learn programming with C language. C teach me fundamental programming.
-                                        I mostly use C to read libraries.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/cpp.jpg"
-                                    alt="cplusplus"
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            C++
-                                            <Rating name="read-only" value={4} readOnly />
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            I started learning C++ after C. I prefer C++ over C due to its simplicity. 
-                                            I use C++ a lot in IOT to program micro-controller.
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/html.png"
-                                    alt="HTML"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        HTML
-                                        <Rating name="read-only" value={3} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I haven't learn HTML properly until 2020. Before that I read HTML when I inspect webpage.
-                                        Every Web project which I build has HTML code. 
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/css.png"
-                                    alt="css"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        CSS
-                                        <Rating name="read-only" value={4} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I start learning Css and HTML together. I have fundamental
-                                        understanding with css which use along with my project.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/JS.png"
-                                    alt="javascript"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Javascript
-                                        <Rating name="read-only" value={3} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        Javascript is like a brain to website development. I use Javascript from time to time.
-                                        Javascript is not a strong language for me.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/solidity.jpg"
-                                    alt="solidity"
-                                    />
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            Solidity
-                                            <Rating name="read-only" value={1} readOnly />
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            My father encourage me to learn Solidity because he and i both have interest in Crypto currency.
-                                            I have learn it. but haven't use it yet.
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                    </Content>
-                </Container>
-                <Container>
-                    <div data-aos='fade-up' className=''>
-                        <Typography variant='h3' style={{paddingTop:60+"px"}}>Machine Learning</Typography>
-                    </div>
-                    <Content>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea onClick={() =>setOdOpen(true)}>
-                                    <CardMedia
-                                        component="img"
-                                        height="140"
-                                        image="img/TFOD.jpg"
-                                        alt="TFOD"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Object Detection
-                                        <Rating name="read-only" value={4} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I am fond of Object detection. I started using open source then I start creating my own!
-                                    </Typography>
-                                    </CardContent>
-                                    <Button size="small">Try it out!</Button>
-                                </CardActionArea>
-                                                                 
-                            </Card>
-                            <Modal
-                              open={odopen}
-                              onClose={() => setOdOpen(false)}
-                              aria-labelledby="modal-modal-title"
-                              aria-describedby="modal-modal-description"
-                            >
-                                <OD></OD>
-                            </Modal>
-                        </div> 
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/MLAI.jpeg"
-                                    alt="AI"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        ML & AI
-                                        <Rating name="read-only" value={2} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I use Machine learing with Keras and Tensorflow. Studing data with regression, CNN, with both supervise and unsupervise learing. 
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/data.jpg"
-                                    alt="Data"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Data Analysis
-                                        <Rating name="read-only" value={3} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        My published research both use machine learning in order to analyse data and display a visulise data.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                    </Content>
-                </Container>
-                <Container>
-                        <div data-aos='fade-up' className=''>
-                            <Typography variant='h3' style={{paddingTop:60+"px"}}>Internet Of Things</Typography>
-                        </div>
-                    <Content>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/arduino.jpg"
-                                    alt="arduino"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Arduino
-                                        <Rating name="read-only" value={4} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I start learning Arduino when I join SPACE AC. CanSat project has been buid with Arduino.
-                                        I get data from sensor and use it along with IOT.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/raspberrypi.png"
-                                    alt="raspberry pi"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Raspberry Pi
-                                        <Rating name="read-only" value={3} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        I use Raspberry pi in server managment and Camera. Coding in Linux-base is similar to x86.
-                                        I need to learn some linux command to use it too!
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                    </Content>
-                </Container>
-                <Container>
-                <div data-aos='fade-up' className=''>
-                    <Typography variant='h3' style={{paddingTop:60+"px"}}>Website Development</Typography>
-                </div>
-                    <Content>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea href='#'>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/react.png"
-                                    alt="react"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        React
-                                        <Rating name="read-only" value={3} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        React is an amazing tools to build Website. This website is aloso created with react.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/django.png"
-                                    alt="django"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Django
-                                        <Rating name="read-only" value={1} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                       Django has an amazing backend. I have learned it a while ago but find it hard to work with.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                        <div data-aos='fade-up' className='codecard'>
-                            <Card sx={{ maxWidth: 345 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image="img/flask.png"
-                                    alt="flask"
-                                    />
-                                    <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Flask
-                                        <Rating name="read-only" value={2} readOnly />
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        A popular light weight website backend as flask is easy to use. I have use this for a few projects.
-                                    </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </div>
-                    </Content>
-                </Container>
-            </Container>
+           <Container>
+				<Header><Typography variant='h1' style={{padding:"60px 60px 60px 60px"}}>Programming</Typography></Header>
+				<Container>
+					<Content>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }} >
+								<CardActionArea href='https://www.python.org/'>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/python.png"
+									alt="python_card"
+									/>
+									<CardContent>
+									<Typography gutterBottom variant="h5" component="div">
+										Python    
+										<Rating name="read-only" value={5} readOnly />
+									</Typography>
+									<Typography variant="body2" color="text.secondary">
+									interpreted high-level general-purpose language. Its design philosophy emphasizes code readability with its use of significant indentation.
+									</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/C.jpg"
+									alt="C_card"
+									/>
+									<CardContent>
+									<Typography gutterBottom variant="h5" component="div">
+										C 
+										<Rating name="read-only" value={3} readOnly />
+									</Typography>
+									<Typography variant="body2" color="text.secondary">
+									a general-purpose, procedural computer programming language supporting structured programming
+									</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/cpp.jpg"
+									alt="cplusplus"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										C++  
+										<Rating name="read-only" value={4} readOnly />
+										</Typography>
+										<Typography variant="body2" color="text.secondary">
+										general-purpose programming language  as an extension of the C programming language, or "C with Classes"
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/html.png"
+									alt="HTML"
+									/>
+									<CardContent>
+									<Typography gutterBottom variant="h5" component="div">
+									HTML    
+										<Rating name="read-only" value={3} readOnly />
+									</Typography>
+									<Typography variant="body2" color="text.secondary">
+										standard markup language for documents designed to be displayed in a web browser.
+									</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/css.png"
+									alt="css"
+									/>
+									<CardContent>
+									<Typography gutterBottom variant="h5" component="div">
+									CSS    
+										<Rating name="read-only" value={3} readOnly />
+									</Typography>
+									<Typography variant="body2" color="text.secondary">
+										a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+									</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/JS.png"
+									alt="javascript"
+									/>
+									<CardContent>
+									<Typography gutterBottom variant="h5" component="div">
+										JS   
+										<Rating name="read-only" value={2} readOnly />
+									</Typography>
+									<Typography variant="body2" color="text.secondary">
+									programming language that conforms to the ECMAScript specification. JavaScript is high-level, real time compiled and multi-paradigm
+									</Typography>
+
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/solidity.jpg"
+									alt="solidity"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										Solidity    
+										<Rating name="read-only" value={1} readOnly />
+                    </Typography>
+									<Typography variant="body2" color="text.secondary">
+                    object-oriented programming language for writing smart contracts
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/qt.jpg"
+									alt="QT"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+											QT 
+											<Rating name="read-only" value={4} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      widget toolkit for creating graphical user interfaces and cross-platform applications that run on various software and hardware platforms
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/arduino.jpg"
+									alt="arduino"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+											Arduino
+											<Rating name="read-only" value={4} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      open-source hardware and software that designs and manufactures single-board microcontrollers for building digital devices
+                    </Typography>
+                  </CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/raspberrypi.png"
+									alt="raspberrypi"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+											Raspberry PI
+											<Rating name="read-only" value={4} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      series of small single-board computers developed by the Raspberry Pi Foundation in association with Broadcom. 
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/react.png"
+									alt="react"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+											React
+											<Rating name="read-only" value={3} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      open-source front-end JavaScript library for building user interfaces or UI components
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/django.png"
+									alt="django"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+											React
+											<Rating name="read-only" value={1} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Python-based free and open-source web framework that follows the model–template–views architectural pattern
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/flask.png"
+									alt="flask"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										flask
+											<Rating name="read-only" value={2} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/tf.png"
+									alt="tensorflow"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										Tensorflow
+											<Rating name="read-only" value={2} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      TensorFlow is a open-source software library for machine learning and artificial intelligence
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/keras.png"
+									alt="keras"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										Keras
+											<Rating name="read-only" value={1} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Keras is an open-source software library that provides a Python interface for artificial neural networks. 
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/scikit.png"
+									alt="scikit"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										scikit
+											<Rating name="read-only" value={1} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Scikit-learn is a free software machine learning library for the Python programming language. feature many algorithm design.
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/TFOD.jpg"
+									alt="tensorflow object detection"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										object detection
+											<Rating name="read-only" value={3} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Tensorflow object detection zoo model is a technology related to computer vision and image processing with integrated architecture
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/discordpy.png"
+									alt="discordpy"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										discordpy
+											<Rating name="read-only" value={4} readOnly />
+										</Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      A modern, feature-rich, async ready API wraper for discord use to write discord bot
+                    </Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+						<div data-aos='fade-up' className='codecard'>
+							<Card sx={{ width: 345, height:270 }}>
+								<CardActionArea>
+									<CardMedia
+									component="img"
+									height="140"
+									image="img/pygame.png"
+									alt="pygame"
+									/>
+									<CardContent>
+										<Typography gutterBottom variant="h5" component="div">
+										pygame
+											<Rating name="read-only" value={4} readOnly />
+										</Typography>
+										<Typography variant="body2" color="text.secondary">
+										  Python modules designed for writeing video games. It incluides computer graphic and sound libraries.
+										</Typography>
+									</CardContent>
+								</CardActionArea>
+							</Card>
+						</div>
+					</Content>
+				</Container>
+			</Container>
     </div>;
 }
  

@@ -2,10 +2,10 @@ import './App.css';
 import NavBar from './components/navbar';
 import Home from './sections/home';
 import Skill from './sections/skill';
-import Project from './sections/project';
+import Milestone from './sections/milestone';
 import About from './sections/about';
 import Contact from './sections/contact';
-import Test from './sections/testtt'
+import Project from './sections/project'
 
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
     <Home/>
     <About/>
     <Skill/>
-    <Test/>
     <Project/>
+    <Milestone/>
     <Contact/>
     
   </div>);

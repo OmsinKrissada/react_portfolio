@@ -97,28 +97,10 @@ export const photos = [
       href: 'https://github.com/Retaehc-pop/Django_Reminder'
     },
     {
-      src: "img/django.png",
+      src: "img/work/django.png",
       width: 2,
       height: 1,
-      href: 'https://google.com'
-    },
-    {
-      src: "img/flask.png",
-      width: 438,
-      height: 245,
-      href: 'https://google.com'
-    },
-    {
-        src: "img/scikit.png",
-        width: 800,
-        height: 431,
-        href: 'https://google.com'
-    },
-    {
-    src: "img/discordpy.png",
-    width: 1,
-    height: 1,
-    href: 'https://google.com'
+      href: 'https://github.com/Retaehc-pop/Django_Reminder'
     }
   ];
   
