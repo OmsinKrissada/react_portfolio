@@ -2,13 +2,13 @@ import React, { useRef, useEffect} from "react";
 import * as tf from "@tensorflow/tfjs";
 import Webcam from "react-webcam";
 
-function OD(link,box,cls,score, label) {
+function OD(props,link,box,cls,score,label) {
     const webcamRef = useRef(null);
     const canvasRef = useRef(null);
     let interval;
 
     const runCoco = async () => {
-        const net = await tf.loadGraphModel(link)
+        const net = await tf.loadGraphModel(props.link)
         interval = setInterval(() => {
         detect(net);
         }, 16.7);
@@ -37,16 +37,16 @@ function OD(link,box,cls,score, label) {
         const obj = await net.executeAsync(expanded)
         
 
-        const boxes = await obj[box].array()
-        const classes = await obj[cls].array()
-        const scores = await obj[score].array()
+        const boxes = await obj[props.box].array()
+        const classes = await obj[props.cls].array()
+        const scores = await obj[props.score].array()
         
         if (!canvasRef || !canvasRef.current){
             clearInterval(interval);
             return;
         }
         const ctx = canvasRef.current.getContext("2d");
-        requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.7, videoWidth, videoHeight, ctx, label)}); 
+        requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.7, videoWidth, videoHeight, ctx, props.label)}); 
         tf.dispose(img)
         tf.dispose(resized)
         tf.dispose(casted)
@@ -55,6 +55,7 @@ function OD(link,box,cls,score, label) {
 
         }
     };
+    // eslint-disable-next-line
     useEffect(()=>{runCoco()},[]);
 
     return (
