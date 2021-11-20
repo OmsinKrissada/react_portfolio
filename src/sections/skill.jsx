@@ -67,7 +67,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/cpp.jpg"
+									image="img/Cpp.jpg"
 									alt="cplusplus"
 									/>
 									<CardContent>
@@ -109,7 +109,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/css.png"
+									image="img/CSS.png"
 									alt="css"
 									/>
 									<CardContent>
