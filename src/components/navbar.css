@@ -1,0 +1,27 @@
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000;
+}
+.navbar .na {
+  width: 100px;
+  height: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  color: #ffff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.navbar .na:hover,
+.navbar .na.active {
+  background-color: #ffff;
+  color: #466ba3;
+}

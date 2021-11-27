@@ -1,16 +1,19 @@
 import React from "react";
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import './navbar.css'
 
 class NavBar extends React.Component {
     render() { 
+        const style = {
+            // textDecoration: 'none' ,
+            // color: "#ffff",
+        } 
         return <div className="navbar">
-            <img href="#" src='logo192.png' alt='Retaehc logo'width="50" height="50"/>
-            <p className="active"><Link activeClass='active'  to="home" spy={true} smooth={true} offset={0} duration={300}>HOME</Link></p>
-            <p><Link activeClass='active' to="about" spy={true} smooth={true} offset={0} duration={300*1.5}>ABOUT</Link></p>
-            <p><Link activeClass='active' to="skill" spy={true} smooth={true} offset={0} duration={300*2}>SKILL</Link></p>
-            <p><Link activeClass='active' to="project" spy={true} smooth={true} offset={0} duration={300*2.5}>PROJECT</Link></p>
-            <p><Link activeClass='active' to="milestone" spy={true} smooth={true} offset={0} duration={300*2.5}>MILESTONE</Link></p>
-            <p><Link activeClass='active' to="contact" spy={true} smooth={true} offset={0} duration={300*3}>CONTACT</Link></p>
+            <Link to="/"><img href="#" src='logo192.png' alt='Retaehc logo'width="50" height="50"/></Link>
+            <p><Link className='na'to="about" style={style}>ABOUT</Link></p>
+            <p><Link className='na'to="skills" style={style}>SKILL</Link></p>
+            <p><Link className='na'to="project" style={style}>PROJECT</Link></p>
+            <p><Link className='na'to="milestone" style={style}>MILESTONE</Link></p>
         </div>;
     }
 }

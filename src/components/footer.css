@@ -1,0 +1,60 @@
+.contact-section {
+  height: 20vh;
+  width: 100%;
+  background-color: #000000;
+  /* justify-content: space-evenly; */
+  margin-top: 0%;
+  align-items: center;
+  display: flex;
+}
+.contact-section .contact-copyright p {
+  text-align: left;
+  margin-left: 30px;
+  /* position: absolute; */
+  color: #eeee;
+}
+.contact-section .contact-icon {
+  position: absolute;
+  /* text-align: right; */
+  right: 40px;
+}
+.contact-section .contact-icon .fa {
+  border-radius: 25%;
+  padding: 20px;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-section .contact-icon .fa-github:hover {
+  background: #000000;
+  color: white;
+}
+.contact-section .contact-icon .fa-twitter:hover {
+  background: #55acee;
+  color: white;
+}
+.contact-section .contact-icon .fa-google:hover {
+  background: #dd4b39;
+  color: white;
+}
+.contact-section .contact-icon .fa-instagram:hover {
+  background: #125688;
+  color: white;
+}
+.contact-section .contact-icon .fa-phone-square:hover {
+  background: #52b35a;
+  color: white;
+}
+.contact-section .contact-icon .fa-stack-overflow:hover {
+  background: #f1f1f1;
+  color: rgb(240, 164, 64);
+}
+.contact-section .contact-icon .fa-discord:hover {
+  background: #4c69eb;
+  color: rgb(218, 218, 218);
+}
