@@ -21,7 +21,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import Typography from '@mui/material/Typography';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-
+import "./milestone.css"
 
 export default function Milestone() {
   useEffect(() => {

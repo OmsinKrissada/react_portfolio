@@ -5,20 +5,22 @@ import 'aos/dist/aos.css';
 import { Header } from 'rsuite';
 
 import Gallery from "react-photo-gallery";
-import { photos } from "../photos";
+import { photos } from "./photos";
 import Carousel from "react-images";
-// import Carousel, { Modal, ModalGateway } from "react-images";
 
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import CloseIcon from '@mui/icons-material/Close';
 
-import OD from "../components/OD";
+import { useNavigate } from 'react-router-dom'
 
+import OD from "../components/OD";
+import "./project.css"
 
 
 function Project(){
+	const navigate = useNavigate()
 	const [currentImage, setCurrentImage] = useState(0);
 	const [viewerIsOpen, setViewerIsOpen] = useState(false);
 	const [isLink, setisLink] = useState(false);
@@ -39,7 +41,7 @@ function Project(){
 			setscore(photo.score);
 			setlabel(photo.label);
 		}
-		window.open(photo.href)
+		navigate(photo.name, { replace: true })
 		// eslint-disable-next-line
 	}, []);
 

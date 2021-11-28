@@ -9,7 +9,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { Container, Header, Content } from 'rsuite';
 import 'react-stack-overflow-badge/dist/index.css'
-
+import "./skill.css"
 function Skill(){
     useEffect(() => {
         Aos.init({duration:1000});
@@ -25,7 +25,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/python.png"
+									image="img/skill/python.png"
 									alt="python_card"
 									/>
 									<CardContent>
@@ -46,7 +46,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/C.jpg"
+									image="img/skill/c.jpg"
 									alt="C_card"
 									/>
 									<CardContent>
@@ -67,7 +67,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/Cpp.jpg"
+									image="img/skill/cpp.jpg"
 									alt="cplusplus"
 									/>
 									<CardContent>
@@ -88,7 +88,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/html.png"
+									image="img/skill/html.png"
 									alt="HTML"
 									/>
 									<CardContent>
@@ -109,7 +109,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/CSS.png"
+									image="img/skill/css.png"
 									alt="css"
 									/>
 									<CardContent>
@@ -130,12 +130,12 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/JS.png"
+									image="img/skill/js.png"
 									alt="javascript"
 									/>
 									<CardContent>
 									<Typography gutterBottom variant="h5" component="div">
-										JS   
+										Javascript   
 										<Rating name="read-only" value={2} readOnly />
 									</Typography>
 									<Typography variant="body2" color="text.secondary">
@@ -152,7 +152,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/solidity.jpg"
+									image="img/skill/solidity.jpg"
 									alt="solidity"
 									/>
 									<CardContent>
@@ -173,7 +173,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/qt.jpg"
+									image="img/skill/qt.jpg"
 									alt="QT"
 									/>
 									<CardContent>
@@ -194,7 +194,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/arduino.jpg"
+									image="img/skill/arduino.jpg"
 									alt="arduino"
 									/>
 									<CardContent>
@@ -215,7 +215,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/raspberrypi.png"
+									image="img/skill/raspberrypi.png"
 									alt="raspberrypi"
 									/>
 									<CardContent>
@@ -236,7 +236,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/react.png"
+									image="img/skill/react.png"
 									alt="react"
 									/>
 									<CardContent>
@@ -257,7 +257,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/django.png"
+									image="img/skill/django.png"
 									alt="django"
 									/>
 									<CardContent>
@@ -278,7 +278,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/flask.png"
+									image="img/skill/flask.png"
 									alt="flask"
 									/>
 									<CardContent>
@@ -299,7 +299,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/tf.png"
+									image="img/skill/tf.png"
 									alt="tensorflow"
 									/>
 									<CardContent>
@@ -320,7 +320,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/keras.png"
+									image="img/skill/keras.png"
 									alt="keras"
 									/>
 									<CardContent>
@@ -341,7 +341,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/scikit.png"
+									image="img/skill/scikit.png"
 									alt="scikit"
 									/>
 									<CardContent>
@@ -362,7 +362,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/TFOD.jpg"
+									image="img/skill/TFOD.jpg"
 									alt="tensorflow object detection"
 									/>
 									<CardContent>
@@ -383,7 +383,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/discordpy.png"
+									image="img/skill/discordpy.png"
 									alt="discordpy"
 									/>
 									<CardContent>
@@ -404,7 +404,7 @@ function Skill(){
 									<CardMedia
 									component="img"
 									height="140"
-									image="img/pygame.png"
+									image="img/skill/pygame.png"
 									alt="pygame"
 									/>
 									<CardContent>

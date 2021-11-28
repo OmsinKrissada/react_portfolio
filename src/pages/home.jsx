@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-scroll';
-
+import "./home.css"
 function Home () {
 
     const [offset, setOffset] = useState(0);

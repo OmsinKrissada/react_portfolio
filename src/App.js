@@ -4,9 +4,11 @@ import Home from './pages/home';
 import Skill from './pages/skill';
 import Milestone from './pages/milestone';
 import About from './pages/about';
-import Footer from './components/footer';
+import Footer from './components/footer'
 import Project from './pages/project'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Work from './pages/work'
+import Page404 from './pages/404'
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 
 function App() {
   return ( 
@@ -15,10 +17,13 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/' caseSensitive={false} element={<Home />}/>
-        <Route path='about' caseSensitive={false} element={<About />}/>
-        <Route path='skills' caseSensitive={false} element={<Skill />}/>
-        <Route path='project' caseSensitive={false} element={<Project />}/>
-        <Route path='milestone' caseSensitive={false} element={<Milestone />}/>
+        <Route path='/about' caseSensitive={false} element={<About />}/>
+        <Route path='/skills' caseSensitive={false} element={<Skill />}/>
+        <Route path='/project/:projectName' caseSensitive={false} element={<Work />}/>
+        <Route path='/project' caseSensitive={false} element={<Project />}/>
+        <Route path='/milestone' caseSensitive={false} element={<Milestone />}/>
+        <Route path='/404' caseSensitive={false} element={<Page404 />}/>
+        <Route path='*' caseSensitive={false} element={<Navigate replace to='/404'/>}/>
       </Routes>
       <Footer/>
   </div>

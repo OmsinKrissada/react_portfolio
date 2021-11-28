@@ -17,7 +17,7 @@ class Footer extends React.Component {
                 <a href="https://github.com/Retaehc-pop" className="fa fa-github fa-2x" aria-hidden="true"> </a>
                 <a href="tel:+66898118068" className="fa fa-phone-square fa-2x" aria-hidden="true"> </a>
                 <a href="https://stackoverflow.com/users/14537225/papop-lekhapanyaporn" className="fa fa-stack-overflow" aria-hidden="true"> </a>
-                <a href="https://discordapp.com/users/267572826418970624" className="fa fa-discord"><FontAwesomeIcon icon={faDiscord} size="s"/></a>
+                <a href="https://discordapp.com/users/267572826418970624" className="fa fa-discord"><FontAwesomeIcon icon={faDiscord} size="1x"/></a>
             </div>
         </div>;
     }

@@ -1,0 +1,9 @@
+.milestone-section {
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(#7597de, #eeee);
+}
+.milestone-section h1 {
+  margin-top: 0%;
+  padding: 50px;
+}

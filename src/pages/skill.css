@@ -1,0 +1,11 @@
+.skill-section {
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  background: linear-gradient(#7597de, #eeee);
+  /* padding: 70px; */
+}
+.skill-section .codecard {
+  display: inline-block;
+  margin: 10px 10px 10px 10px;
+}
