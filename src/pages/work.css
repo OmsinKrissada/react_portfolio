@@ -1,24 +1,25 @@
 .work {
-  background: linear-gradient(#7597de, #eeee);
-  height: auto;
-  width: 100vw;
-  position: relative;
-  align-items: center;
-  margin: 0%;
+	background: linear-gradient(#7597de, #eeee);
+	height: auto;
+	width: 100vw;
+	position: relative;
+	align-items: center;
+	margin: 0%;
 }
 .work h1 {
-  margin-top: 0%;
-  padding-top: 7%;
+	margin-top: 0%;
+	padding-top: 7%;
 }
-.work img .mainimg {
-  margin: 5%;
-  min-width: 500px;
+.work .mainimg {
+	box-sizing: border-box;
+	width: 95vmin;
+	height: auto;
 }
 .work .main {
-  width: 100%;
-  justify-content: space-evenly;
-  display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	display: flex;
 }
 .work .main .info {
-  width: 450px;
+	width: 450px;
 }
