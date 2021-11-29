@@ -11,6 +11,7 @@
 }
 .home-section img {
   position: absolute;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
@@ -44,4 +45,13 @@
   background-color: #ffff;
   color: #466ba3;
   opacity: 70%;
+}
+@media screen and (max-width: 600px) {
+  .home-section img#anti {
+    margin-left: 15%;
+    display: flex;
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+  }
 }

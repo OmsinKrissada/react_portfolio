@@ -1,15 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect} from "react";
 import "./test.css";
-// import img from '../../public/img/about/'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Test() {
+
+  useEffect(() => {
+		Aos.init({ duration: 1000 ,
+      easing: 'ease-in-sine'});
+	}, []);
+
 	return (
 		<div className="about-section">
 			<div className="section">
-				<h1>I'M POP</h1>
-				<h2>Papop Lekhapanyaporn</h2>
-				<img className="Background" src={"/img/about/Artboard4.png"} width="auto" height={500} alt="" />
+        <img className="Background" src={"/img/about/Artboard4.png"} alt="" />
+        <h1 data-aos="fade-up" id="text">I'M POP</h1>
+				<h1 data-aos="fade-up" id="text">Papop Lekhapanyaporn</h1>
+			</div>
+      <div className="section">
+        <img className="Background" src={"/img/about/Artboard4.png"} alt="" />
+        <h1 data-aos="fade-up" id="text">I'M POP</h1>
+				<h1 data-aos="fade-up" id="text">Papop Lekhapanyaporn</h1>
 			</div>
 		</div>
 	);

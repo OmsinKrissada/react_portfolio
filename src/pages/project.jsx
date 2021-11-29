@@ -52,6 +52,7 @@ function Project() {
 	useEffect(() => {
 		Aos.init({ duration: 1000 });
 	}, []);
+	
 	return (
 		<div className="project-section" id="project">
 			<Header data-aos="fade-up" style={{ padding: "60px 60px 40px 60px" }}>
