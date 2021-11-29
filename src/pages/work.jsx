@@ -24,7 +24,7 @@ function Work() {
     return (
         <div className="work">
             <h1>{item.name}</h1>
-            <img className="img" alt={item["name"]} scr={require(item.image)} width={500} height={500}/>
+            <img className="img" alt={item["name"]} scr={item.image} width={500} height={500}/>
             <div className="main">
                 <section className='description'>
                     <h4>Information</h4>

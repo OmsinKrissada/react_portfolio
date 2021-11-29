@@ -1,15 +1,15 @@
-.home-section section {
+.home-section {
   background: linear-gradient(#7597de, #eeee);
   position: relative;
   width: 100%;
   height: 100vh;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.home-section section img {
+.home-section img {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,22 +18,12 @@
   object-fit: cover;
   pointer-events: none;
 }
-.home-section section img#moon {
-  mix-blend-mode: screen;
-}
-.home-section section img#mountains_front {
-  z-index: 10;
-}
-.home-section section img#mountains_behind {
-  z-index: 0;
-}
-.home-section #text {
-  position: absolute;
-  color: #eeee;
-  text-align: justify;
-  /* right: 0; */
-  white-space: nowrap;
-  font-size: 7.5vw;
+.home-section img#anti {
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50%;
+  height: 50%;
   z-index: 100;
 }
 .home-section #btn {
@@ -44,8 +34,14 @@
   right: 20px;
   background: #eeee;
   border-radius: 40px;
-  color: rgba(35, 18, 97, 0.658) de;
+  color: rgba(21, 38, 112, 0.658);
   font-size: 1.5em;
   z-index: 10000;
-  transform: translateY(100px);
+  transform: translateY(250px);
+}
+.home-section #btn:hover,
+.home-section .active {
+  background-color: #ffff;
+  color: #466ba3;
+  opacity: 70%;
 }
