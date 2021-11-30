@@ -23,13 +23,10 @@ function Work() {
 		<div className="work">
 			<h1>{item.name}</h1>
 			<img className="mainimg" alt={item["name"]} src={item.image} />
-			<div className="main">
-				<h4>Source</h4>
-				<a href={item.source}>{item.source}</a>
-				{
-					content.map( paragraph => paragraph)
-					}
-			</div> 
+			<h4>Source : <a href={item.source}>{item.source}</a></h4>
+			{
+				content.map( paragraph => paragraph)
+				}
 		</div>
 	);
 }
