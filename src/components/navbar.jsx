@@ -14,26 +14,26 @@ function NavBar() {
 			<img className="ham" src="/hamburger.png" alt="" onClick={() => setisOpen(!isOpen)} />
 			{/* <img class="ham" src="/hamburger.png" alt="" /> */}
 			<div className={isOpen ? "navbox" : "hidden navbox"}>
-				<Link to="/">
+				<Link onClick={() => setisOpen(false)} to="/">
 					<img href="#" src="/logo192.png" alt="Retaehc logo" width="50" height="50" />
 				</Link>
 				<p>
-					<Link className="na" to="about" style={style}>
+					<Link className="na" to="about" onClick={() => setisOpen(false)} style={style}>
 						ABOUT
 					</Link>
 				</p>
 				<p>
-					<Link className="na" to="skills" style={style}>
+					<Link className="na" to="skills" onClick={() => setisOpen(false)} style={style}>
 						SKILL
 					</Link>
 				</p>
 				<p>
-					<Link className="na" to="project" style={style}>
+					<Link className="na" to="project" onClick={() => setisOpen(false)} style={style}>
 						PROJECT
 					</Link>
 				</p>
 				<p>
-					<Link className="na" to="milestone" style={style}>
+					<Link className="na" to="milestone" onClick={() => setisOpen(false)} style={style}>
 						MILESTONE
 					</Link>
 				</p>

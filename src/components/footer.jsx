@@ -12,9 +12,6 @@ class Footer extends React.Component {
 				</div>
 				<div className="contact-icon">
 					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-					<a href="https://twitter.com/retaehc_pop" className="fa fa-twitter">
-						{" "}
-					</a>
 					<a href="mailto:papop2003@gmail.com" className="fa fa-google">
 						{" "}
 					</a>
