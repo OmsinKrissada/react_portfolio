@@ -55,9 +55,9 @@ function Project() {
 	
 	return (
 		<div className="project-section" id="project">
-			<Header data-aos="fade-up" style={{ padding: "60px 60px 40px 60px" }}>
-				<Typography variant="h1">Project</Typography>
-				<Typography variant="h6">Click to navigate to that project</Typography>
+			<Header data-aos="fade-up" >
+				<h1> Projects </h1>
+				<p> Click to navigate </p>
 			</Header>
 			<Gallery data-aos="fade-up" photos={photos} direction={"column"} margin={5} onClick={openLightbox} />
 			<Modal open={viewerIsOpen} onClose={closeLightbox}>

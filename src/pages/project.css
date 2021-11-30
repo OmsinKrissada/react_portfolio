@@ -1,7 +1,15 @@
 .project-section {
-	height: 100%;
-	width: 100vw;
-	align-items: center;
-	background: linear-gradient(#7597de, #eeee);
-	/* padding: 70px; */
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+  background: linear-gradient(#7597de, #eeee);
+  /* padding: 70px; */
+}
+.project-section h1 {
+  margin: 0%;
+
+  font-size: 5em;
+}
+.project-section p {
+  font-size: 1.5em;
 }

@@ -8,31 +8,28 @@ function Work() {
 	const [item, setItem] = useState({
 		name: "",
 		image: "",
-		source: ""
-	});
+		source: "",
+		content: [],
+		});
+	
 
 	useEffect(() => {
-		console.log(Projects);
-		console.log(projectName);
-		console.log(Projects[projectName]);
 		setItem(Projects[projectName]);
-		console.log(item);
 		// eslint-disable-next-line
 	}, []);
-
+	const content = item["content"];
+	console.log(content)
 	return (
 		<div className="work">
 			<h1>{item.name}</h1>
 			<img className="mainimg" alt={item["name"]} src={item.image} />
 			<div className="main">
-				<section className="description">
-					<h4>Information</h4>
-				</section>
-				<section className="info">
-					<h4>Source</h4>
-					<a href={item.source}>{item.source}</a>
-				</section>
-			</div>
+				<h4>Source</h4>
+				<a href={item.source}>{item.source}</a>
+				{
+					content.map( paragraph => paragraph)
+					}
+			</div> 
 		</div>
 	);
 }

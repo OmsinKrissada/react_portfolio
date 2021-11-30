@@ -16,7 +16,7 @@ function Skill(){
     }, [])
     return <div className='skill-section' id='skill'>
            <Container>
-				<Header><Typography variant='h1' style={{padding:"60px 60px 60px 60px"}}>Programming</Typography></Header>
+				<Header><h1>CODE</h1></Header>
 				<Container>
 					<Content>
 						<div data-aos='fade-up' className='codecard'>
@@ -159,10 +159,10 @@ function Skill(){
 										<Typography gutterBottom variant="h5" component="div">
 										Solidity    
 										<Rating name="read-only" value={1} readOnly />
-                    </Typography>
-									<Typography variant="body2" color="text.secondary">
-                    object-oriented programming language for writing smart contracts
-                    </Typography>
+										</Typography>
+										<Typography variant="body2" color="text.secondary">
+											object-oriented programming language for writing smart contracts
+										</Typography>
 									</CardContent>
 								</CardActionArea>
 							</Card>
@@ -181,8 +181,8 @@ function Skill(){
 											QT 
 											<Rating name="read-only" value={4} readOnly />
 										</Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      widget toolkit for creating graphical user interfaces and cross-platform applications that run on various software and hardware platforms
+										<Typography variant="body2" color="text.secondary">
+										widget toolkit for creating graphical user interfaces and cross-platform applications that run on various software and hardware platforms
 										</Typography>
 									</CardContent>
 								</CardActionArea>
@@ -272,27 +272,7 @@ function Skill(){
 								</CardActionArea>
 							</Card>
 						</div>
-						<div data-aos='fade-up' className='codecard'>
-							<Card sx={{ width: 345, height:270 }}>
-								<CardActionArea>
-									<CardMedia
-									component="img"
-									height="140"
-									image="img/skill/flask.png"
-									alt="flask"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="div">
-										flask
-											<Rating name="read-only" value={2} readOnly />
-										</Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
-                    </Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
-						</div>
+
 						<div data-aos='fade-up' className='codecard'>
 							<Card sx={{ width: 345, height:270 }}>
 								<CardActionArea>
@@ -309,48 +289,6 @@ function Skill(){
 										</Typography>
                     <Typography variant="body2" color="text.secondary">
                       TensorFlow is a open-source software library for machine learning and artificial intelligence
-                    </Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
-						</div>
-						<div data-aos='fade-up' className='codecard'>
-							<Card sx={{ width: 345, height:270 }}>
-								<CardActionArea>
-									<CardMedia
-									component="img"
-									height="140"
-									image="img/skill/keras.png"
-									alt="keras"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="div">
-										Keras
-											<Rating name="read-only" value={1} readOnly />
-										</Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Keras is an open-source software library that provides a Python interface for artificial neural networks. 
-                    </Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
-						</div>
-						<div data-aos='fade-up' className='codecard'>
-							<Card sx={{ width: 345, height:270 }}>
-								<CardActionArea>
-									<CardMedia
-									component="img"
-									height="140"
-									image="img/skill/scikit.png"
-									alt="scikit"
-									/>
-									<CardContent>
-										<Typography gutterBottom variant="h5" component="div">
-										scikit
-											<Rating name="read-only" value={1} readOnly />
-										</Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Scikit-learn is a free software machine learning library for the Python programming language. feature many algorithm design.
                     </Typography>
 									</CardContent>
 								</CardActionArea>

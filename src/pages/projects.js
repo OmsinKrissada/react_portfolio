@@ -1,8 +1,21 @@
+import OD from '../components/OD'
+
 export const Projects = {
   "tetris_ai": {
     "name": "Tetris AI",
     "image": "/img/work/Tetris_ai.png",
-    "source": "https://github.com/Retaehc-pop/Pygame_Tetris"
+    "source": "https://github.com/Retaehc-pop/Pygame_Tetris",
+    "content":[
+      <p>Createing a tetris using python with the help of pygame library</p>,
+      <p>Using a generic algorithm of aggregation height, Holes, and line complete to determind the best position</p>,
+      <img src="/img/work/Tetris_ai.png" alt=""/>,
+      <OD link="https://livelong.s3.au-syd.cloud-object-storage.appdomain.cloud/model.json" box={4} cls={5} score={6} 
+      label={
+        {"1": { "name": "ThumbsUp", "color": "red" },
+        "2": { "name": "ThumbsDown", "color": "yellow" },
+        "3": { "name": "ThankYou", "color": "lime" },
+        "4": { "name": "LiveLong", "color": "blue" }}} />,
+    ]
   },
   "flappybird_ai": {
     "name": "Flappybird AI",
@@ -13,7 +26,6 @@ export const Projects = {
     "name": "Retaehc_Bot",
     "image": "/img/work/rtbot.png",
     "source": "https://github.com/Retaehc-pop/Retaehc_BOT"
-
   },
   "Pong": {
     "name": "Ping Pong",
