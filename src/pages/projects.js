@@ -1,4 +1,3 @@
-import { margin } from '@mui/system';
 import OD from '../components/OD'
 
 export const Projects = {
@@ -54,7 +53,7 @@ export const Projects = {
       <p>Role: Owner</p>,
       <p>&emsp;Discord is a very popular application amoung my friends. We use it quite often to communicate while gaming and studying. Since I use this application a lot I start interested to create a bot of my own. This Discord bot was created using python and a help from Discord.py which is a discord API library.</p>,
       <div>
-      <img style={{objectFit: 'contain'}} src="/img/work/rtbot/bot.png"/>
+      <img style={{objectFit: 'contain'}} alt="" src="/img/work/rtbot/bot.png"/>
       <div>
       <h3>Admin:</h3>
       <p><code>status</code> Server status</p>
