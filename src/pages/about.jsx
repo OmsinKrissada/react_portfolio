@@ -18,13 +18,13 @@ function About () {
 			<div className="section">
 				<img className="Background" src="/img/about/Artboard4.png" alt="" />
 				<h1 data-aos="fade-up" id="text">I'M POP</h1>
-				<h1 data-aos="fade-up" id="text">Papop Lekhapanyaporn</h1>
+				<h1 data-aos="fade-up" id="text2">Papop Lekhapanyaporn</h1>
 			</div>
       		<div className="section">
 				<img className="Background" src="/img/about/pic2.jpg" alt="" />
 				<h1 data-aos="fade-up" id="text">Education</h1>
 				<SchoolIcon data-aos="fade-up" id="text"/>
-				<a href="https://www.assumption.ac.th/" style={{textDecoration:"none"}}><h1 data-aos="fade-up" id="text">Assumption College, Bangkok,Thailand</h1></a>
+				<a href="https://www.assumption.ac.th/" style={{textDecoration:"none"}}><h1 data-aos="fade-up" id="text2">Assumption College, Bangkok, Thailand</h1></a>
 			</div>
 			<div className="section">
 				<img className="Background" src="/img/about/pic1.jpg" alt="" />
@@ -34,7 +34,7 @@ function About () {
 			</div>
 			<div className="section">
 				<img className="Background" src="/img/about/pic3.jpg" alt="" />
-				<h1 data-aos="fade-up" id="text">Check out my Project</h1>
+				<h1 data-aos="fade-up" id="text">Check out</h1>
 				<Link to="/project"><h1 data-aos="fade-up" id="btn">my Project</h1></Link>
 			</div>
 		</div>

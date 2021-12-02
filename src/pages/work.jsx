@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Projects } from "./projects";
 import { useParams } from "react-router-dom";
 import "./work.css";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Work() {
 	const { projectName } = useParams();
@@ -9,6 +10,7 @@ function Work() {
 		name: "",
 		image: "",
 		source: "",
+		bg: "",
 		content: [],
 		});
 	
@@ -18,15 +20,16 @@ function Work() {
 		// eslint-disable-next-line
 	}, []);
 	const content = item["content"];
-	console.log(content)
 	return (
 		<div className="work">
-			<h1>{item.name}</h1>
-			<img className="mainimg" alt={item["name"]} src={item.image} />
-			<h4>Source : <a href={item.source}>{item.source}</a></h4>
-			{
-				content.map( paragraph => paragraph)
-				}
+			<img alt="" src={item.bg} className="background"/>
+			<div className="content">
+				<img alt="" src={item.image} className="cover"/>
+				<h1 className="header">{item.name} <a href={item.source}><GitHubIcon id="icon"/></a></h1>
+				{
+					content.map( paragraph => paragraph)
+					}
+			</div>
 		</div>
 	);
 }

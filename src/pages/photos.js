@@ -1,4 +1,12 @@
 export const photos = [
+  {
+    name: "Sporos",
+    src: "img/work/sporos/sporos.jpg",
+    width: 1,
+    height: 1,
+    href: 'https://github.com/Retaehc-pop/US-cansat',
+    type: 'link'
+  },
     {
       name: "tetris_ai",
       src: "img/work/Tetris_ai.png",
@@ -17,7 +25,7 @@ export const photos = [
     },
     {
       name: "Retaehc_Bot",
-      src: "img/work/rtbot.png",
+      src: "img/work/rtbot/rtbot.png",
       width: 8,
       height: 5,
       href: 'https://github.com/Retaehc-pop/Retaehc_BOT',
@@ -55,14 +63,7 @@ export const photos = [
       href: 'https://github.com/Food-Busters',
       type: 'link'
     },
-    {
-      name: "Sporos",
-      src: "img/work/sporos.jpg",
-      width: 1,
-      height: 1,
-      href: 'https://github.com/Retaehc-pop/US-cansat',
-      type: 'link'
-    },
+    
     {
       name: "ChessAI",
       src: "img/work/chessai.png",
