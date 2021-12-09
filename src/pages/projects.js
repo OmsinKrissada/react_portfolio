@@ -10,7 +10,7 @@ export const Projects = {
       <p>Role: Programmer</p>,
       <p>&emsp;&emsp;CanSat Competition hosted by AIAA was the most challenging aspect in my life. SPACE AC has formed a team call SPOROS including me and my four other friends. This competition is about desinging an auto rotationg payload which can be deploy without parachute. The container also able to relay data from science payload to the ground station. There are 4 round in this competition. It was all reall hard and challenging considered that we are all just a high-school student that has to compete against undergrads.</p>,
       <h2>My Team</h2>,
-      <p>left to right; James, Ping, Peace, Pop(me), Gino</p>,
+      <p style={{textAlign: "center"}}>left to right; James, Ping, Peace, Pop(me), Gino</p>,
       <img src="/img/work/sporos/team.jpg" alt=""/>,
       <h2>PDR 97.76% </h2>,
       <img src="/img/work/sporos/pdr.jpg" alt=""/>,
@@ -18,10 +18,10 @@ export const Projects = {
       <img src="/img/work/sporos/cdr.jpg" alt=""/>,
       <h2>Environmental test</h2>,
       <img src="/img/work/sporos/env.jpg" alt=""/>,
-      <h2>Demonstration 100% 1st place</h2>,
-      <h2>We won overall score 3rd place!!</h2>,
+      <h2 style={{textAlign: "center"}}>Demonstration 100% #1st </h2>,
+      <h2 style={{textAlign: "center"}}> We won overall score #3rd place!!</h2>,
       <img src="/img/work/sporos/demonstration.jpg" alt=""/>,
-      <h2>TNN reporting our placement in the news : <a style={{color: 'white'}}href="https://www.youtube.com/watch?v=SsPL1c-oBug&t=64s">link</a></h2>,
+      <h2 style={{textAlign: "center"}}>TNN reporting our placement in the news : <a style={{color: 'white'}}href="https://www.youtube.com/watch?v=SsPL1c-oBug&t=64s">link</a></h2>,
       <img src="/img/work/sporos/news.jpg" alt=""/>,
     ]
   },
@@ -99,7 +99,6 @@ export const Projects = {
       <p><code>help</code> Shows this message</p>
       <p><code>setrole</code> create embed which can self assigned role to each person</p>
       </div>
-      {/* <img style={{objectFit: 'contain' ,margin:"5rem"}} src="/img/work/rtbot/bot.png"/> */}
       </div>
     ]
   },
@@ -137,18 +136,28 @@ export const Projects = {
   },
   "Foodbuster": {
     "name": "Food Buster",
-    "image": "/img/work/Foodbuster.png",
+    "image": "/img/work/Foodbuster/Foodbuster.png",
     "source": "https://github.com/Food-Busters",
-    "bg": "https://github.com/Food-Busters",
+    "bg": "/img/work/Foodbuster/poster.png",
     "content":[
       <p>Role: AI developer</p>,
       <p>&emsp;&emsp;Hackaton is one of many young programmer dream event to participate. My friends and I started this project by forming a team and create an innovation buisness under a topic of Air pollution. Usually, when people thik of air pollution they this of cars, combusion, factory, etc. My team wanted to stand out and pick a topic which falls to waste food management. As an AI developer in this team, I had created a AI useing a tensorflow zoo model which is a classification model. Then I was able to fine tune it to the right about which it can detect which food it is in the mobile application. This AI can be improve useing feature extraction to classified more food with lesser memory use in the processor, I also want this model to be able to detect how much food was left after the eating is done. Calculating the carbon footprint created by the food and convince more people to take the right amount for their plate</p>,
-      <img src="/img/work/Foodbuster_present.png" alt='presentation'/>,
+      <img src="/img/work/Foodbuster/Foodbuster_present.png" alt='presentation'/>,
       <p>&emsp;&emsp;It was a very fun and interesting event for me. I get to learn how to start makeing Innovation to save the world. Many amazing and hard working people have come to this competition to win the tital of Hackaton champion. Unfortunately for us, we only want to the final round which has only 20 teams left. There is only one winner in this competition sadly for us we cant win. but it was a great experience for my team.</p>,
-      <img src="/img/work/Foodbuster_certificate.jpg" alt='presentation'/>
+      <img src="/img/work/Foodbuster/Foodbuster_certificate.jpg" alt='presentation'/>
     ]
   },
-  
+  "AlienSat": {
+    "name": "AlienSat",
+    "image": "/img/work/alien/alien.jpeg",
+    "bg": "/img/work/alien/alien.jpeg",
+    "source": "https://github.com/Retaehc-pop/Thailand-cansat",
+    "content":[
+      <p>Role: Programmer</p>,
+      <h1>Under development</h1>,
+
+    ]
+  },
   "ChessAI": {
     "name": "ChessAI",
     "image": "/img/work/chessai.png",
@@ -156,24 +165,13 @@ export const Projects = {
     "source": "https://github.com/Retaehc-pop/Pygame_ChessEngine",
     "content":[
       <p>Role: Owner</p>,
-
-    ]
-  },
-  "AlienSat": {
-    "name": "AlienSat",
-    "image": "/img/work/alien.jpeg",
-    "bg": "/img/work/alien.jpeg",
-    "source": "https://github.com/Retaehc-pop/Thailand-cansat",
-    "content":[
-      <p>Role: Programmer</p>,
-
     ]
   },
   "SpaceAC": {
     "name": "SpaceAC",
     "image": "/img/work/spaceac.png",
     "bg": "/img/work/spaceac.png",
-    "source": "https://github.com/Retaehc-pop/SpaceAc_tools",
+    "source": "https://github.com/SPACE-AC",
     "content":[
       <p>Role: Vice president, Programmer, Treaserur</p>,
 
@@ -188,33 +186,24 @@ export const Projects = {
       <p>Role: Owner</p>,
     ]
   },
-  "PSG1": {
-    "name": "PSG1",
-    "image": "/img/work/passenger1.png",
-    "bg": "/img/work/passenger1.png",
+  "PSG": {
+    "name": "Passenger",
+    "image": "/img/work/PSG/passenger.png",
+    "bg": "/img/work/PSG/psg1.jpg",
     "source": "https://github.com/Retaehc-pop/PSG-I",
     "content":[
     <p>Role: Programmer</p>,
+    <div style={{display: "flex",flexDirection: "row",padding:"3rem"}}>
+      <img src="/img/work/PSG/passenger1.png" alt="" style={{width: "30vmin",margin:"0rem 2rem"}}/>
+      <img src="/img/work/PSG/passenger2.png" alt="" style={{width: "30vmin",margin:"0rem 2rem"}}/>
+      <img src="/img/work/PSG/passenger3.png" alt="" style={{width: "30vmin",margin:"0rem 2rem"}}/>
+    </div>,
+    <h3>Exploring the Startosphere with high-altitude balloon using a cubesat.</h3>,
+    <img src="/img/work/PSG/psg1.jpg" alt="" style={{width: "90vmin",margin:"1rem"}}/>,
+    <img src="/img/work/PSG/psg2.jpg" alt="" style={{width: "90vmin",margin:"1rem"}}/>,
+    <img src="/img/work/PSG/psg3.jpg" alt="" style={{width: "90vmin",margin:"1rem"}}/>,
+    <img src="/img/work/PSG/psg4.jpg" alt="" style={{width: "90vmin",margin:"1rem"}}/>,
 
-    ]
-  },
-  "PSG2": {
-    "name": "PSG2",
-    "image": "/img/work/passenger2.png",
-    "bg": "/img/work/passenger2.png",
-    "source": "https://github.com/Retaehc-pop/PSG-I",
-    "content":[
-      <p>Role: Programmer</p>,
-
-    ]
-  },
-  "PSG3": {
-    "name": "PSG3",
-    "image": "/img/work/passenger3.png",
-    "bg": "/img/work/passenger3.png",
-    "source": "https://github.com/Retaehc-pop/PSG-I",
-    "content":[
-      <p>Role: Programmer</p>,
     ]
   },
   "TFOD": {
@@ -230,6 +219,7 @@ export const Projects = {
         "2": { "name": "ThumbsDown", "color": "yellow" },
         "3": { "name": "ThankYou", "color": "lime" },
         "4": { "name": "LiveLong", "color": "blue" }}} />,
+      <h2>This can detect finger</h2>
     ]
   },
   "Reminder": {
