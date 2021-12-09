@@ -154,7 +154,8 @@ export const Projects = {
     "source": "https://github.com/Retaehc-pop/Thailand-cansat",
     "content":[
       <p>Role: Programmer</p>,
-      <h1>Under development</h1>,
+      <h2>A cansat design to analyze the particulate matter with a thermal camera</h2>,
+      <h2>Under development</h2>,
 
     ]
   },
